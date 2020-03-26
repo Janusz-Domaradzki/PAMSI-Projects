@@ -67,8 +67,6 @@ int main()
   bool zly_wybor;
   char czy_wyswietlic;
   srand(time(NULL));
-  //auto start_t=chrono::system_clock::now();
-//  auto end_t=chrono::system_clock::now();
   chrono::duration<double> czas_sort[ilosc_tablic];
   while(1)
   {
@@ -244,12 +242,7 @@ int main()
     }
     sprawdz_sort(dane3[4],rozmiar_tablicy);
     cout << "Czas intro_sort: " << SumaCzasu(czas_sort,ilosc_tablic).count()*1000 << " ms " << endl;
-    //cout << "Czas sortowania: " << SumaCzasu(czas_sort,ilosc_tablic).count()*1000 << " ms " << endl;
-    /*cout << "Czy chcesz wyswietlic losowa tablice? (y/n) ";
-    cin >> czy_wyswietlic;
-    cout << endl;
-    if(czy_wyswietlic=='y' || czy_wyswietlic=='Y')
-    wyswietl_tablice(dane[4],rozmiar_tablicy);*/
+
     usun_tablice(temp);
     for(int j=0;j<ilosc_tablic;j++)
     {
